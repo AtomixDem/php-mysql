@@ -31,4 +31,5 @@ if($connessione->query($sql) === true) {
     echo "Errore creazione database: " . $connessione->error;
 }
 
+$connessione->close(); // Termina la connessione con il DB
 ?>
