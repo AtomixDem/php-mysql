@@ -14,7 +14,11 @@ if($connessione === false) {
 
 
 $sql = "INSERT INTO utenti (Nome, Cognome, Username, Email) VALUES
-('Luca', 'Rossi', 'Luks', 'luca.rossi@gmoil.com')";
+('Luca', 'Rossi', 'Luks', 'luca.rossi@gmoil.com'),
+('Gaia', 'Gialli', 'Gagi', 'gaia.gialli@gmoil.com'),
+('Sara', 'Bianchi', 'Sasi', 'sara.bianchi@gmoil.com'),
+('Marco', 'Neri', 'Marcolino', 'marco.neri@gmoil.com')
+";
 
 if($connessione->query($sql) === true) {
     echo "Utente inserito con successo.";
