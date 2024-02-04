@@ -21,7 +21,8 @@ $sql = "INSERT INTO utenti (Nome, Cognome, Username, Email) VALUES
 ";
 
 if($connessione->query($sql) === true) {
-    echo "Utente inserito con successo.";
+    $ultimo_utente = $connessione->insert_id;
+    echo "Utenti inseriti con successo, ID ultimo utente è: " . $ultimo_utente;
 } else {
     echo "Errore durante inserimento: " . $connessione->error;
 }
