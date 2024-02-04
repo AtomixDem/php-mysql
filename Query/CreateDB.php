@@ -16,4 +16,5 @@ if($connessione->query($sql) == true) { // Verifichiamo che la creazione del DB 
     echo "Errore creazione database: " . $connessione->error; // Stampa gli eventuali errori
 }
 
+$connessione->close(); // Termina la connessione con il DB
 ?>
